@@ -1,6 +1,6 @@
 function updateTime() {
     var startTime = new Date('2024-07-06T00:00:00').getTime();
-    var endTime = new Date('2024-07-07T00:00:00').getTime();
+    var endTime = new Date('2024-09-10T20:00:00').getTime();
     var now = new Date().getTime();
 
     var distance = endTime - now;
