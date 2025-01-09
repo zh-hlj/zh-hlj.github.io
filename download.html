@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件下载</title>
+    <link rel="stylesheet" href="./css/download.css">
+</head>
+<body>
+    <header>
+        <h1>文件下载页面</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="download.html">文件下载</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="download">
+            <h2>下载文件</h2>
+            <p>点击下面的链接下载文件：</p>
+            <ul>
+                <li><a href="#" onclick="selectCloudService()">转跳到网盘_NEKOPARA</a></li>
+                <li><a href="files/sample2.docx" download>下载示例文件2 (DOCX)</a></li>
+                <li><a href="files/sample3.zip" download>下载示例文件3 (ZIP)</a></li>
+                <li><a href="wg/xlsx.html">转跳到电子表格下载站</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;  zh-hlj 01/09/2025</p>
+    </footer>
+    <script>
+        function selectCloudService() {
+            const services = [
+                { name: '百度网盘', url: ':https://pan.baidu.com/s/14Gxqzi2NZE3q4lsruwl6sg?pwd=tzsg' },
+                { name: 'Google Drive', url: 'https://drive.google.com' },
+                { name: 'OneDrive', url: 'https://onedrive.live.com' },
+                { name: '蓝奏云', url: 'https://www.lanzous.com' }
+            ];
+
+            let serviceList = '请选择一个网盘服务:\n';
+            services.forEach((service, index) => {
+                serviceList += `${index + 1}. ${service.name}\n`;
+            });
+
+            const choice = prompt(serviceList);
+            const selectedService = services[parseInt(choice) - 1];
+
+            if (selectedService) {
+                window.location.href = selectedService.url;
+            } else {
+                alert('无效的选择');
+            }
+        }
+    </script>
+</body>
+</html>
