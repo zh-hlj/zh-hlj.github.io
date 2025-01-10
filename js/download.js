@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {//定义下载链接
-    const gameDownloadLink = document.getElementById('NEKOPARA_download');
+    const gameDownloadLink = document.getElementById('#NEKOPARA_download');
     if (gameDownloadLink) {
         gameDownloadLink.addEventListener('click', (event) => {
             event.preventDefault();
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {//定义下载链接
         });
     }//定义下载链接到此结束
 
-    const animeLinks2024 = document.querySelectorAll('anime_202401-12');//定义2024年动画情报下载链接
+    const animeLinks2024 = document.querySelectorAll('#anime_202401-12');//定义2024年动画情报下载链接
     animeLinks2024.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {//定义下载链接
         });
     });//定义2024年动画情报下载链接到此结束
 
-    const animeLinks2025 = document.querySelectorAll('anime_202501-12');//定义2025年动画情报下载链接
+    const animeLinks2025 = document.querySelectorAll('#anime_202501-12');//定义2025年动画情报下载链接
     animeLinks2025.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
