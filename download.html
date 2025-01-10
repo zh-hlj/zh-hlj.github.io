@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文件下载</title>
     <link rel="stylesheet" href="./css/download.css">
+    <script src="./js/download.js"></script>
+    <script src="./js/background.js"></script>
 </head>
 <body>
     <header>
@@ -13,6 +15,7 @@
             <ul>
                 <li><a href="index.html">首页</a></li>
                 <li><a href="download.html">文件下载</a></li>
+                <li><a href="anime_index.html">动漫公示下载</a></li>
             </ul>
         </nav>
     </header>
@@ -21,37 +24,16 @@
             <h2>下载文件</h2>
             <p>点击下面的链接下载文件：</p>
             <ul>
-                <li><a href="#" onclick="selectCloudService()">转跳到网盘_NEKOPARA</a></li>
-                <!--<li><a href="files/sample2.docx" download>下载示例文件2 (DOCX)</a></li>
-                <li><a href="files/sample3.zip" download>下载示例文件3 (ZIP)</a></li>-->
-                <li><a href="download/wg/xlsx.html">转跳到电子表格下载站</a></li>
+                <li><a id="gamedownload" href="#" onclick="selectCloudService()">转跳到网盘_NEKOPARA</a></li>
+                <!--<li><a class="animes" href="">下载示例文件2 (DOCX)</a></li>-->
+                <!--<li><a href="files/sample3.zip" download>下载示例文件3 (ZIP)</a></li>-->
             </ul>
         </section>
     </main>
     <footer>
-        <p>&copy;  zh-hlj 01/09/2025</p>
+        <p>&copy; zh-hlj 01/09/2025</p>
+        <a href="mailto:anime_cn_hr@outlook.com">联系我</a>
+        <a href="https://github.com/zh-hlj/zh-hlj.github.io">访问托管</a>
     </footer>
-    <script>
-        function selectCloudService() {
-            const services = [
-                { name: '百度网盘', url: 'https://pan.baidu.com/s/14Gxqzi2NZE3q4lsruwl6sg?pwd=tzsg' },
-                { name: '夸克网盘（提取码：sLBM）', url: 'https://pan.quark.cn/s/c654142b4e34' },
-            ];
-
-            let serviceList = '请选择一个网盘服务:\n';
-            services.forEach((service, index) => {
-                serviceList += `${index + 1}. ${service.name}\n`;
-            });
-
-            const choice = prompt(serviceList);
-            const selectedService = services[parseInt(choice) - 1];
-
-            if (selectedService) {
-                window.location.href = selectedService.url;
-            } else {
-                alert('无效的选择');
-            }
-        }
-    </script>
 </body>
 </html>
