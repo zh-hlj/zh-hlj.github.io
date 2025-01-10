@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {//定义下载链接
-    const gameDownloadLink = document.getElementById('#NEKOPARA_download');
+    const gameDownloadLink = document.getElementById('NEKOPARA_download');
     if (gameDownloadLink) {
         gameDownloadLink.addEventListener('click', (event) => {
             event.preventDefault();
