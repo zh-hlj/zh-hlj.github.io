@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {//定义网盘下载链接监听器
-    const gameDownloadLink = document.getElementById('NEKOPARA_download');
+    const gameDownloadLink = document.getElementById('games_download');
     if (gameDownloadLink) {
         gameDownloadLink.addEventListener('click', (event) => {
             event.preventDefault();
