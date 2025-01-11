@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {//定义网盘下载链接�
 
 function selectCloudServiceForGame() {//网盘服务选择
     const services = [
-        { name: '百度网盘', url: 'https://pan.baidu.com/s/14Gxqzi2NZE3q4lsruwl6sg?pwd=tzsg' },
+        { name: '百度网盘', url: 'https://pan.baidu.com/s/1TY8NagX6NBDqQhttXXOONg?pwd=tzsg' },
         { name: '夸克网盘（提取码：bBPJ）', url: 'https://pan.quark.cn/s/a6211fdada88' },
     ];
 
