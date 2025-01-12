@@ -1,0 +1,16 @@
+/* ...existing code... */
+
+body {
+    cursor: pointer; /* 将鼠标指针样式设置为指针 */
+}
+
+/* 您可以为其他元素添加不同的鼠标指针样式 */
+a {
+    cursor: pointer; /* 链接的鼠标指针样式 */
+}
+
+button {
+    cursor: pointer; /* 按钮的鼠标指针样式 */
+}
+
+/* ...existing code... */
