@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {//定义网盘下载链接�
             selectCloudServiceForAnime2026();
         });
     });
+
+    // 动态入站效果
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('visible');
+        }, index * 200);
+    });
 });//定义2025年动画情报下载链接到此结束
 
 function selectCloudServiceForGame() {//网盘服务选择
