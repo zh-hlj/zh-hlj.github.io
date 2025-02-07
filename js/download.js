@@ -69,7 +69,7 @@ function selectCloudServiceForAnime2024() {//2024年动画情报服务选择
         { name: '第四季度', url: './download/animes/y-2024/zip/202410v4.7.zip' },
     ];
 
-    let serviceList = '请选择月份:\n';
+    let serviceList = '提示：文件来源与外部网站，并非zh-hlj整理。\n来源链接https://xf.hmacg.cn/\n由于没有自动更新文件，所以文件为手动更新可能有文件与实际情况不符合请您谅解\n\n请选择月份:\n';
     services.forEach((service, index) => {
         serviceList += `${index + 1}. ${service.name}\n`;
     });
@@ -96,7 +96,7 @@ function selectCloudServiceForAnime2025() {//2025年动画情报服务选择
         { name: '第四季度', url: '' },
     ];
 
-    let serviceList = '请选择月份:\n';
+    let serviceList = '提示：文件来源与外部网站，并非zh-hlj整理。\n来源链接https://xf.hmacg.cn/\n由于没有自动更新文件，所以文件为手动更新可能有文件与实际情况不符合请您谅解\n\n请选择月份:\n';
     services.forEach((service, index) => {
         serviceList += `${index + 1}. ${service.name}\n`;
     });
@@ -123,7 +123,7 @@ function selectCloudServiceForAnime2026() { // 2026年动画情报服务选择
         { name: '第四季度', url: '' },
     ];
 
-    let serviceList = '请选择月份:\n';
+    let serviceList = '提示：文件来源与外部网站，并非zh-hlj整理。\n来源链接https://xf.hmacg.cn/\n由于没有自动更新文件，所以文件为手动更新可能有文件与实际情况不符合请您谅解\n\n请选择月份:\n';
     services.forEach((service, index) => {
         serviceList += `${index + 1}. ${service.name}\n`;
     });
