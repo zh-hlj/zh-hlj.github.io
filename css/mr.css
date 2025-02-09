@@ -1,0 +1,10 @@
+img {
+    max-width: 100px;
+    height: auto;
+}
+.enabled {
+    background-color: #d4edda;
+}
+.disabled {
+    background-color: #f8d7da;
+}
