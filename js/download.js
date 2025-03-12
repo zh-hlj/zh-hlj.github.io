@@ -91,7 +91,7 @@ function selectCloudServiceForAnime2024() {//2024年动画情报服务选择
 function selectCloudServiceForAnime2025() {//2025年动画情报服务选择
     const services = [
         { name: '第一季度', url: './download/animes/y-2025/zip/202501v4.0.zip' },
-        { name: '第二季度', url: './downlad/anomes/y-2025/zip/202504v1.0.zip' },
+        { name: '第二季度', url: './downlad/animes/y-2025/zip/202504v1.0.zip' },
         { name: '第三季度', url: '' },
         { name: '第四季度', url: '' },
     ];
